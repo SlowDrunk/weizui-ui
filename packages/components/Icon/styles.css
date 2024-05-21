@@ -1,0 +1,16 @@
+.wz-icon {
+    --wz-icon-color: inherit;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    fill: currentColor;
+    color: var(--wz-icon-color);
+    font-size: inherit;
+  }
+  
+  @each $val in primary, info, success, warning, danger {
+    .wz-icon--$(val) {
+      --wz-icon-color: var(--wz-color-$(val));
+    }
+  }

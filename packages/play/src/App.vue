@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <wz-button />
+  <wz-button size="large">按钮</wz-button>
 </template>
 
 <style scoped>
