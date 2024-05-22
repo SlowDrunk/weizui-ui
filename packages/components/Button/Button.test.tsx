@@ -41,9 +41,9 @@ describe("Button.vue", () => {
     expect(wrapper.find("button").element.disabled).toBeTruthy();
 
     // events
-    // await wrapper.get("button").trigger("click");
-    // expect(onClick).toHaveBeenCalledOnce();
-    // expect(wrapper.emitted("click")).toBeUndefined();
+    await wrapper.get("button").trigger("click");
+    expect(onClick).toHaveBeenCalledOnce();
+    expect(wrapper.emitted("click")).toBeUndefined();
   });
 
   test("loading button", () => {

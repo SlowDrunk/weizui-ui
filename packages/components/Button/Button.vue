@@ -73,7 +73,7 @@ defineExpose<ButtonInstance>({
 			</slot>
 		</template>
 		<wz-icon
-			v-if="icon || !loading"
+			v-if="icon && !loading"
 			:icon="icon || ''"
 			size="1x"
 			:style="iconStyle"
