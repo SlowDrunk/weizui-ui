@@ -1,6 +1,10 @@
 <script setup lang="ts">
-import { ref } from "vue";
 import type { CollapseItemName } from "weizui-ui";
+import { ref } from "vue";
+
+defineOptions({
+	name: "CollapseExple",
+});
 const activeNames = ref(["1"]);
 
 function handleChange(val: CollapseItemName[]) {
@@ -9,31 +13,8 @@ function handleChange(val: CollapseItemName[]) {
 </script>
 
 <template>
-	<!-- <wz-tooltip
-		class="box-item"
-		content="Top Left prompts info"
-		placement="top-start"
-	>
-		<wz-button>top-start</wz-button>
-	</wz-tooltip>
-	<wz-dropdown>
-		<a class="dropdown-link">
-			Dropdown List
-			<wz-icon icon="angle-down" />
-		</a>
-		<template #dropdown>
-			<wz-dropdown-item command="1">Action 1</wz-dropdown-item>
-			<wz-dropdown-item command="2" label="Action 2" />
-			<wz-dropdown-item command="3" disabled>Action 3</wz-dropdown-item>
-			<wz-dropdown-item command="4" divided>Action 4</wz-dropdown-item>
-		</template>
-	</wz-dropdown> -->
 	<wz-collapse v-model="activeNames" @change="handleChange">
 		<wz-collapse-item title="Consistency" name="1">
-			<template #title>
-				<span style="color: var(--wz-color-danger)"> Consistency </span>
-				<wz-icon icon="question-circle" />
-			</template>
 			<div>
 				Consistent with real life: in line with the process and logic of
 				real life, and comply with languages and habits that the users
@@ -45,7 +26,7 @@ function handleChange(val: CollapseItemName[]) {
 				etc.
 			</div>
 		</wz-collapse-item>
-		<wz-collapse-item title="Feedback" name="2" disabled>
+		<wz-collapse-item title="Feedback" name="2">
 			<div>
 				Operation feedback: enable the users to clearly perceive their
 				operations by style updates and interactive effects;
@@ -83,18 +64,3 @@ function handleChange(val: CollapseItemName[]) {
 		</wz-collapse-item>
 	</wz-collapse>
 </template>
-
-<style scoped>
-.logo {
-	height: 6em;
-	padding: 1.5em;
-	will-change: filter;
-	transition: filter 300ms;
-}
-.logo:hover {
-	filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-	filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
