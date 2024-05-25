@@ -52,6 +52,7 @@
     border-bottom: 1px solid var(--wz-collapse-border-color);
     padding-bottom: 25px;
   }
+  
   .slide-enter-active,
   .slide-leave-active {
     transition: height var(--wz-transition-duration) ease-in-out;
