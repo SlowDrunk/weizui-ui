@@ -2,7 +2,8 @@
 import { ErMessage } from "weizui-ui";
 
 function handleClose() {
-  ErMessage.info("close callback");
+  // ErMessage.info("close callback");
+  console.log("close callback");
 }
 </script>
 <template>

@@ -1,23 +1,31 @@
 <script lang="ts" setup>
-import { ErMessage } from "weizui-ui";
+// import { ErMessage } from "weizui-ui";
 
 const open1 = () => {
-  ErMessage("This is a message.");
+  // ErMessage("This is a message.");
+  alert("This is a message.")
+
 };
 const open2 = () => {
-  ErMessage({
-    message: "Congrats, this is a success message.",
-    type: "success",
-  });
+  // ErMessage({
+  //   message: "Congrats, this is a success message.",
+  //   type: "success",
+  // });
+  alert("This is a message.")
+
 };
 const open3 = () => {
-  ErMessage({
-    message: "Warning, this is a warning message.",
-    type: "warning",
-  });
+  // ErMessage({
+  //   message: "Warning, this is a warning message.",
+  //   type: "warning",
+  // });
+  alert("This is a message.")
+
 };
 const open4 = () => {
-  ErMessage.error("Oops, this is a error message.");
+  // ErMessage.error("Oops, this is a error message.");
+  alert("This is a message.")
+
 };
 </script>
 

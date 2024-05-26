@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { reactive, ref } from "vue";
-import { ErMessage, type FormInstance } from "weizui-ui";
+// import { ErMessage, type FormInstance } from "weizui-ui";
 
-const formRef = ref<FormInstance>();
+const formRef = ref<any>();
 const form = reactive({
   name: "",
   region: "",
@@ -25,9 +25,10 @@ const rules = reactive({
 });
 
 const onSubmit = () => {
-  formRef.value?.validate().then((valid) => {
+  formRef.value?.validate().then((valid:any) => {
     if (valid) {
-      ErMessage.success("submit!");
+      // ErMessage.success("submit!");
+      alert('submit')
     }
   });
 };

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { reactive, ref } from "vue";
-import { ErMessage } from "weizui-ui";
+// import { ErMessage } from "weizui-ui";
 
 const form = reactive({
   name: "",
@@ -15,7 +15,8 @@ const options = ref([
 ]);
 
 const onSubmit = () => {
-  ErMessage.success("submit!");
+  // ErMessage.success("submit!");
+  alert('submit')
 };
 </script>
 

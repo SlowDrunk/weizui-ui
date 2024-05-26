@@ -1,12 +1,13 @@
 <script lang="ts" setup>
-import { ErMessage } from "weizui-ui";
+// import { ErMessage } from "weizui-ui";
 
 const openCenter = () => {
-  ErMessage({
-    showClose: true,
-    message: "Centered text",
-    center: true
-  });
+  // ErMessage({
+  //   showClose: true,
+  //   message: "Centered text",
+  //   center: true
+  // });
+  alert("This is a message.")
 };
 </script>
 

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { reactive, ref } from "vue";
-import { ErMessage, type FormProps } from "weizui-ui";
+// import { ErMessage, type FormProps } from "weizui-ui";
 
 const form = reactive({
   name: "",
@@ -12,10 +12,11 @@ const options = ref([
   { value: "beijing", label: "Zone One" },
   { value: "shanghai", label: "Zone Two" },
 ]);
-const labelPosition = ref<FormProps["labelPosition"]>("right");
+const labelPosition = ref<any["labelPosition"]>("right");
 
 const onSubmit = () => {
-  ErMessage.success("submit");
+  // ErMessage.success("submit");
+  alert('submit')
 };
 </script>
 

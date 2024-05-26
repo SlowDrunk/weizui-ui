@@ -1,7 +1,8 @@
 <script setup>
-import { ErMessage } from "weizui-ui";
+// import { ErMessage } from "weizui-ui";
 function handleBtnClick() {
-  ErMessage.info("btn click");
+  // ErMessage.info("btn click");
+  console.log("btn click");
 }
 </script>
 

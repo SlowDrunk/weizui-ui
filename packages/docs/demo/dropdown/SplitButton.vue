@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type DropdownItemProps, ErMessage } from "weizui-ui";
+import { type DropdownItemProps,  } from "weizui-ui";
 
 const items: DropdownItemProps[] = [
   { command: "1", label: "Action 1" },
@@ -9,7 +9,8 @@ const items: DropdownItemProps[] = [
 ];
 
 function handleClick() {
-  ErMessage.info("button click");
+  // ErMessage.info("button click");
+  console.log("button click");
 }
 </script>
 
