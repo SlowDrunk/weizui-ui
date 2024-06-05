@@ -28,7 +28,7 @@ function handleChange(val: CollapseItemName[]) {
 			<wz-dropdown-item command="4" divided>Action 4</wz-dropdown-item>
 		</template>
 	</wz-dropdown> -->
-	<wz-collapse v-model="activeNames" @change="handleChange">
+	<!-- <wz-collapse v-model="activeNames" @change="handleChange">
 		<wz-collapse-item title="Consistency" name="1">
 			<template #title>
 				<span style="color: var(--wz-color-danger)"> Consistency </span>
@@ -81,7 +81,13 @@ function handleChange(val: CollapseItemName[]) {
 				operation.
 			</div>
 		</wz-collapse-item>
-	</wz-collapse>
+	</wz-collapse> -->
+	<div style="max-width: 600px">
+    <wz-alert type="success">Success alert</wz-alert>
+    <wz-alert type="info">Info alert</wz-alert>
+    <wz-alert type="warning">Warning alert</wz-alert>
+    <wz-alert type="danger">Error alert</wz-alert>
+  </div>
 </template>
 
 <style scoped>
