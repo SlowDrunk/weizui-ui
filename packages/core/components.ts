@@ -1,3 +1,5 @@
+// components.ts
+
 import { WzButton, WzIcon, WzButtonGroup, WzTooltip, WzDropDown, WzDropDownItem, WzCollapse, WzCollapseItem, WzAlert } from "@weizui-ui/components";
 import type { Plugin } from "vue";
 
