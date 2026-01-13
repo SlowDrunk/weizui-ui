@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'pnpm'
 
       - name: Install dependencies
@@ -48,15 +48,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-<<<<<<< Updated upstream
           node-version: '20'
-
-      - name: Install pnpm
-        run: npm install -g pnpm
-=======
-          node-version: '18'
           cache: 'pnpm'
->>>>>>> Stashed changes
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
