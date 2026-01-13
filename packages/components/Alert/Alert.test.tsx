@@ -16,7 +16,9 @@ describe("Alert.vue", () => {
         default: desc,
       },
       global: {
-        stubs: ["ErIcon"],
+        components: {
+          WzIcon: Icon,
+        },
       },
     });
     expect(wrapper.text()).toContain(title);
@@ -54,7 +56,9 @@ describe("Alert.vue", () => {
         default: desc,
       },
       global: {
-        stubs: ["WzIcon"],
+        components: {
+          WzIcon: Icon,
+        },
       },
     });
 
@@ -77,10 +81,14 @@ describe("Alert.vue", () => {
         default: desc,
       },
       global: {
-        stubs: ["ErIcon"],
+        components: {
+          WzIcon: Icon,
+        },
       },
     });
-    wrapper.findComponent(Icon).trigger("click");
+    const iconElement = wrapper.findComponent(Icon);
+    expect(iconElement.exists()).toBeTruthy();
+    iconElement.trigger("click");
     expect(onClose).toHaveBeenCalled();
   });
 
